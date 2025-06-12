@@ -1,8 +1,30 @@
-<nav>
-    <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/smartphones/">Smartphones</a></li>
-        <li><a href="/wearables/">Wearables</a></li>
-        <li><a href="/laptops/">Laptops</a></li>
-    </ul>
+<!-- _includes/nav.html: Barra de navegación principal (Bootstrap 5) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Marca/Logo del sitio -->
+    <a class="navbar-brand" href="{{ "/" | relative_url }}">Tech Reviews</a>
+    <!-- Botón toggle para navegación colapsable en pantallas pequeñas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Enlaces de navegación -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Enlace a la página principal -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/" | relative_url }}">Inicio</a>
+        </li>
+        <!-- Enlaces a categorías -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/smartphones" | relative_url }}">Smartphones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/wearables" | relative_url }}">Wearables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/laptops" | relative_url }}">Laptops</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
