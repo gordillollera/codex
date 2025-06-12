@@ -1,0 +1,5 @@
+[
+  {"id":1,"nombre":"María Gómez","provincia":"Madrid","especialidad":"Psicología","tipo":"Presencial"},
+  {"id":2,"nombre":"Carlos Ruiz","provincia":"Barcelona","especialidad":"Coaching","tipo":"Online"},
+  {"id":3,"nombre":"Laura Sánchez","provincia":"Valencia","especialidad":"Logopedia","tipo":"Presencial"}
+]
