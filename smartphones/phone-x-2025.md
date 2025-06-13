@@ -1,3 +1,3 @@
 ---
-redirect_to: /smartphones/iphone-16.html
+redirect_to: /smartphones/iphone-16/
 ---

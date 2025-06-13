@@ -7,7 +7,7 @@ description: "Reseñas de Laptops – Ultrabooks, portátiles y equipos gaming"
 Bienvenido a la sección de **Laptops**. Aquí evaluamos portátiles ultraligeros para productividad y potentes laptops gaming. Encuentra el portátil perfecto con nuestras reseñas:
 
 ## UltraBook Z 2025
-Un ultrabook premium ultra fino con pantalla 4K de 13", procesador de última generación y batería para toda la jornada. Ideal para profesionales en movimiento. [Leer reseña »](ultrabook-2025.html)
+Un ultrabook premium ultra fino con pantalla 4K de 13", procesador de última generación y batería para toda la jornada. Ideal para profesionales en movimiento. [Leer reseña »]({{ '/laptops/ultrabook-2025/' | relative_url }})
 
 ## ProGamer 17
-Portátil gaming de 17" con tarjeta gráfica de alto rendimiento y refrigeración avanzada. Perfecto para juegos exigentes y creadores de contenido. [Leer reseña »](progamer-17.html)
+Portátil gaming de 17" con tarjeta gráfica de alto rendimiento y refrigeración avanzada. Perfecto para juegos exigentes y creadores de contenido. [Leer reseña »]({{ '/laptops/progamer-17/' | relative_url }})
