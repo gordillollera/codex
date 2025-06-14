@@ -41,4 +41,15 @@ description: "Reseñas y comparativas de gadgets: smartphones, wearables y lapto
       </div>
     </div>
   </div>
+  <!-- Tarjeta categoría Xiaomi -->
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Productos Xiaomi">
+      <div class="card-body">
+        <h5 class="card-title">Xiaomi</h5>
+        <p class="card-text">Smartphones, wearables y gadgets del ecosistema Xiaomi.</p>
+        <a href="{{ "/xiaomi" | relative_url }}" class="btn btn-primary">Ver Xiaomi</a>
+      </div>
+    </div>
+  </div>
 </div>
