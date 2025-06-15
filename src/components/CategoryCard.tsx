@@ -24,19 +24,16 @@ export default function CategoryCard({
 }: CategoryCardProps) {
   const colorClasses = categoryColorMap[category];
 
-  return (
-    <div className={`rounded-lg shadow-md overflow-hidden ${colorClasses}`}>
-      <Image
-        src={image}
-        alt={title}
-        width={400}
-        height={240}
-        className="w-full h-48 object-cover"
-      />
-      <div className="p-4 text-center">
-        <h3 className="text-lg font-semibold mb-1">{title}</h3>
-        <p className="text-sm">{description}</p>
-      </div>
+ return (
+  <div className={`rounded-lg shadow-md overflow-hidden p-4 flex flex-col items-center space-y-2 ${colorClasses}`}>
+    <div className="w-full h-40 relative">
+      <Image src={image} alt={title} fill className="object-cover rounded" />
+    </div>
+    <h3 className="text-lg font-semibold text-center">{title}</h3>
+    <p className="text-sm text-center">{description}</p>
+  </div>
+);
+
     </div>
   );
 }
