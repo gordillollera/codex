@@ -24,13 +24,16 @@ export default function CategoryCard({
 }: CategoryCardProps) {
   const colorClasses = categoryColorMap[category];
 
-  return (
-    <div className={`rounded-lg shadow p-4 flex flex-col items-center space-y-2 ${colorClasses}`}>
-      <div className="w-full h-40 relative">
-        <Image src={image} alt={title} fill className="object-cover rounded" />
-      </div>
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="text-sm text-center">{description}</p>
+ return (
+  <div className={`rounded-lg shadow-md overflow-hidden p-4 flex flex-col items-center space-y-2 ${colorClasses}`}>
+    <div className="w-full h-40 relative">
+      <Image src={image} alt={title} fill className="object-cover rounded" />
+    </div>
+    <h3 className="text-lg font-semibold text-center">{title}</h3>
+    <p className="text-sm text-center">{description}</p>
+  </div>
+);
+
     </div>
   );
 }
