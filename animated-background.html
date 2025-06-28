@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Fondo Animado</title>
+  <style>
+    /* ----- Estilos base para ocupar toda la pantalla ----- */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* Contenedor SVG fijado al fondo */
+    svg.background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;           /* detrás del contenido */
+      pointer-events: none;  /* no bloquear clics */
+    }
+
+    /* Líneas animadas */
+    .line {
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-dasharray: 8 12;
+      animation: dash 18s linear infinite;
+      opacity: 0.5;
+      transform: translateZ(0); /* aceleración */
+    }
+
+    /* Colores temáticos */
+    .python { stroke: #306998; }
+    .javascript { stroke: #f7df1e; }
+    .gpt { stroke: #00c39e; }
+    /* Gradiente para HTML/CSS */
+    .htmlcss { stroke: url(#htmlcssGrad); }
+
+    /* Animación de desplazamiento del trazo */
+    @keyframes dash {
+      to { stroke-dashoffset: -40; }
+    }
+
+    /* Si el usuario prefiere menos animaciones */
+    @media (prefers-reduced-motion: reduce) {
+      .line { animation: none; }
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .optional { display: none; }  /* menos líneas */
+      .line { animation-duration: 10s; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Fondo SVG con líneas diagonales -->
+  <svg class="background" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Gradiente naranja → azul claro para HTML/CSS -->
+      <linearGradient id="htmlcssGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#e34f26" />
+        <stop offset="100%" stop-color="#264de4" />
+      </linearGradient>
+    </defs>
+
+    <!-- python y htmlcss se ocultan en móviles al tener clase optional -->
+    <line class="line python optional" x1="0" y1="100%" x2="100%" y2="0" />
+    <line class="line javascript" x1="-10%" y1="100%" x2="90%" y2="0" />
+    <line class="line htmlcss optional" x1="10%" y1="100%" x2="110%" y2="0" />
+    <line class="line gpt" x1="20%" y1="100%" x2="120%" y2="0" />
+  </svg>
+
+  <main>
+    <h1>Fondo animado de ejemplo</h1>
+    <p>Aquí iría el contenido de la página.</p>
+  </main>
+</body>
+</html>
